@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:h="jakarta.faces.html"
+	xmlns:f="jakarta.faces.core" xmlns:ui="jakarta.faces.facelets"
+	template="/template.xhtml">
+	<ui:define name="content">
+		<h:outputText value="#{testeBean.nome}" />
+		<h:panelGrid id="panel" columns="2" border="1" cellpadding="10"
+			cellspacing="1">
+			<f:facet name="header">
+				<h:outputText value="Login" />
+			</f:facet>
+			<h:outputLabel value="Username" />
+			<h:inputText />
+			<h:outputLabel value="Password" />
+			<h:inputSecret />
+
+			<f:facet name="footer">
+				<h:panelGroup style="display:block; text-align:center">
+					<h:commandButton id="submit" value="Submit" />
+				</h:panelGroup>
+			</f:facet>
+		</h:panelGrid>
+	</ui:define>
+</ui:composition>
