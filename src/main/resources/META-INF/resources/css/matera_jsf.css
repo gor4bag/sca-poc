@@ -1,0 +1,776 @@
+#header_formMenu_jsMenu_menu{
+	float: left;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    MARGIN: 0 0 0 0;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 10pt;
+    BACKGROUND-COLOR: #FFFFFF;
+}
+
+
+#overlay {
+	opacity:0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=65);
+	background-color: #000000;
+	overflow: hidden;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
+A:link {
+  COLOR=#000000
+}
+A:visited {
+  COLOR=#AA00AA
+}
+A:active {
+  COLOR=blue
+}
+A:hover {
+  COLOR=blue
+}
+
+/**.* {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}**/
+
+label {
+    FONT-SIZE: 10pt;
+}
+
+.vtop { vertical-align:top;}
+
+.iframeBody {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    vertical-align: top;
+    background-color: #FFFFFF;
+
+}
+
+.standard {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.userTitle {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+    text-align: left;
+    background-color: #280868;
+}
+
+.title {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+    font-weight: bold;
+}
+
+.sectionTitle {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #003399;
+    font-weight: bold;
+}
+
+.msgError {
+    width: 100%;
+    font-family: Verdana;
+    font-size: 9pt;
+    align: center;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.msgWarning {
+    width: 100%;
+    font-family: Verdana;
+    font-size: 10pt;
+    align: center;
+    color: #0000FF;
+    font-weight: bold;
+}
+
+.errorMessage {
+    padding: 2px;
+    font-size: xx-small;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+
+.message {
+    font-size: small;
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+}
+
+.standard_bold {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+    font-weight: bold;
+}
+
+.scrollerTable {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+    padding: 2;
+    border-style: solid;
+    border-width: 1px;
+    width: 400px;
+}
+
+.scroller {
+    padding-left: 5px;
+}
+
+.paginator {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+
+.standardTable {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+    background-color: #E7EFF7;
+    padding: 2;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.standardTableBordaDupla {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+    background-color: #E7EFF7;
+    padding: 2;
+    border-style: double;
+    border-width: 3;
+}
+
+.standardTableSemBorda {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+    background-color: #E7EFF7;
+    padding: 2;
+    margin: 0 auto;
+}
+
+.standardTable_Valor {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+    background-color: #E7EFF7;
+    padding: 2;
+}
+
+.standardTable_Header {
+	color: #FFFFFF;
+    background-color: #003399;
+    padding: 3;
+    text-align: center;
+    border: none;
+}
+
+.visaoGeralTable_Header {
+	color: #FFFFFF;
+    background-color: #003399;
+    padding: 3;
+    font-size: 10px;
+    text-align: center;
+    border: none;
+}
+
+.standardTable_SortHeader {
+    background-color: #FFDD00;
+    color: #000000;
+    padding: 3;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+}
+
+.standardTable_Footer {
+    background-color: #FFFFE0;
+}
+
+.standardTable_Row1 {
+    font-size: 7pt;
+    background-color: #E7EFF7;
+    vertical-align: top;
+}
+
+.standardTable_Row2 {
+    font-size: 7pt;
+    background-color: #b6dbff;
+    vertical-align: top;
+}
+
+.standardTable_Row3 {
+    font-size: 10pt;
+    background-color: #E7EFF7;
+    vertical-align: top;
+}
+
+.standardTable_Row4 {
+    font-size: 10pt;
+    background-color: #b6dbff;
+    vertical-align: top;
+}
+
+.standardTable_Column {
+}
+
+.table_Column {
+	width: 50%;
+}
+
+.visaoGeralTable_Column {
+    font-size: 10pt;
+    text-align: center
+}
+
+.standardTable_ColumnCentered {
+    text-align: center
+}
+
+.standardTable_ColumnRight {
+    text-align: right;
+}
+
+.table_ColumnRight {
+    text-align: right;
+    width: 50%;
+}
+
+.standardTable_ColumnLeft {
+	vertical-align: middle;
+    text-align: left;
+}
+
+a
+{
+	color: #333366;
+    text-decoration: underline;
+}
+sz
+.error {
+	color: #FF0000;
+}
+
+.formInputText, .formInputTextarea, .formInputTextCalendar {
+  border-bottom: #000000 1px solid;
+  border-left: #000000 1px solid;
+  border-right: #000000 1px solid;
+  border-top: #000000 1px solid;
+}
+
+textarea, input, select {
+  font-family: Arial;
+  font-size: 9pt
+}
+
+.formInputButton {
+  border-bottom: #000000 1px solid;
+  border-left: #000000 1px solid;
+  border-right: #000000 1px solid;
+  border-top: #000000 1px solid;
+}
+
+.sortLink {
+	color: #333366;
+    text-decoration: none;
+}
+
+.pageLayout {
+    padding: 0px;
+    margin: 0px;
+    width:100%;
+    height:100%;
+}
+
+.pageHeader {
+    text-align: center;
+    vertical-align: middle;
+    height:1px;
+    overflow:visible;
+    color: #FFFFFF;
+    padding: 0px;
+    margin: 0px;
+}
+
+.pageHeader1 {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+.pageHeader2 {
+    padding: 0px;
+    margin: 0px;
+    width:100%;
+}
+.pageHeader2col1 {
+    background-color: #EFEBDE;
+}
+
+.pageNavigation {
+    text-align: left;
+    vertical-align: top;
+    width: 200px;
+    background-color: #E7EFF7;
+    border: 1px solid #6392C6;
+    padding: 10px;
+}
+
+.pageBody {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+    vertical-align: top;
+    width: 80%;
+    padding: 11px;
+    background-color: #FFFFFF;
+}
+
+.loginPageBody {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: center;
+    vertical-align: top;
+    width: 80%;
+    padding: 11px;
+    background-color: #FFFFFF;
+}
+
+.pageFooter {
+    text-align: right;
+    font-size: xx-small;
+    height:1px;
+    overflow:visible;
+    background-color: #efebde;
+    color: #123555;
+}
+
+.navigation {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+    width: 20%;
+}
+
+.navitem {
+	white-space : nowrap;
+    text-decoration : none;
+}
+
+a.navitem:hover,active {
+	white-space : nowrap;
+	text-decoration: none;
+    color: #6392C6;
+}
+
+.navitem_open {
+	white-space : nowrap;
+	text-decoration: none;
+	font-weight : bold;
+}
+
+a.navitem_open:hover,active {
+	white-space : nowrap;
+	text-decoration: none;
+	font-weight : bold;
+    color: #6392C6;
+}
+
+.navitem_active {
+	white-space : nowrap;
+	text-decoration: none;
+	font-weight : bold;
+    background-color: #6392C6;
+	width: 100%;
+    color: #FFFFFF;
+}
+
+a.navitem_active:hover,active {
+	white-space : nowrap;
+	text-decoration: none;
+	font-weight : bold;
+    background-color: #6392C6;
+	width: 100%;
+    color: #FFFFFF;
+}
+
+
+.navseparator {
+    line-height: 12px;
+    border-bottom: 1px solid #A2B7C5;
+}
+
+
+
+.fileUploadInput {
+  border-bottom: #000000 1px solid;
+  border-left: #000000 1px solid;
+  border-right: #000000 1px solid;
+  border-top: #000000 1px solid;
+  color: #000000;
+  width: 250px;
+}
+
+
+
+
+.emptyHeader {
+    background-color: #FFFFFF;
+    border-top: 0px none;
+    border-right: 0px none;
+    border-bottom: 0px none;
+    border-left: 0px none;
+}
+
+
+
+div.titlebar {
+  background: #C7D0D9;
+  color: black;
+  border: 1px solid #8CACBB;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin: 0px 0px;
+  clear: both;
+}
+
+/*
+   ------------------------------------------------------------
+   Calendar component
+   ------------------------------------------------------------
+*/
+
+.buttonCalendar{
+	margin-right: 5px;
+	height: 20px;
+	width: 25px;
+}
+
+.yearMonthHeader {
+    background-color: #DDDDDD;
+    color: #000000;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+}
+
+.weekHeader {
+    background-color: #E7E7E7;
+    color: #000000;
+    text-align: center;
+    border: none;
+}
+
+.currentDayCell {
+    background-color: #DDDDDD;
+    color: #000000;
+    border: none;
+}
+
+
+
+.countryFormTable {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+    padding: 2;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.countryFormHeader {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+    padding: 2;
+    border-style: none;
+    background-color: #FFDD00;
+    text-align: center;
+	font-weight : normal;
+}
+
+.countryFormFooter {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+    padding: 2;
+    border-style: none;
+    background-color: #FFDD00;
+    text-align: center;
+	font-weight : normal;
+}
+
+.countryFormLabels {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+    padding: 2;
+    border-style: none;
+    text-align: right;
+	font-weight : bold;
+}
+
+.countryFormInputs {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+    padding: 2;
+    border-style: none;
+}
+
+.tree {
+   lineheight: 18px;
+   font-family: arial, sans-serif;
+}
+
+.treenode {
+   padding: 2px 2px 2px 5px;
+}
+
+.treenode a {
+   text-decoration: none;
+}
+
+.treenodeSelected {
+   padding: 2px 2px 2px 5px;
+}
+
+.treenodeSelected a {
+   text-decoration: none;
+   font-weight: bold;
+}
+
+table .selectOneRadio {
+    font-weight: bold;
+}
+
+
+.standardList {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+.negativeValue {
+    font-style: italic;
+    color: red;
+}
+
+.positiveValue {
+    font-weight: bold;
+    color: blue;
+}
+
+.formTitle {
+  COLOR: #ffffff;
+  BACKGROUND-COLOR: #0066cc;
+  FILTER: dropshadow(color=#000080, offx=1, offy=1, positive=1);
+  FONT-FAMILY: Arial;
+  FONT-SIZE: 10pt
+}
+
+.aplicacao {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+    text-align: right;
+    padding-right: 5px;
+    color: navy;
+    font-weight: bold;
+}
+
+.aplicacao_header {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+    text-align: right;
+    padding-right: 5px;
+    color: navy;
+    font-weight: bold;
+    vertical-align: top;
+    margin: 0px 0px 0px 0px;
+}
+
+.tabela_aplicacao {
+    vertical-align: top;
+    margin: 0px 0px 0px 0px;
+    text-align: right;
+}
+
+TR.formBodyErr {
+  FONT-FAMILY: Arial;
+  FONT-SIZE: 9pt;
+  PADDING-LEFT: 1pt;
+  PADDING-RIGHT: 1pt;
+  COLOR: #FF3333;
+}
+
+/* Usado para o corpo principal do Formulário (linhas com inputs) */
+TR.formBody {
+  FONT-FAMILY: Arial;
+  FONT-SIZE: 9pt;
+  PADDING-LEFT: 1pt;
+  PADDING-RIGHT: 1pt;
+  COLOR: #000000
+}
+
+/* Usado para labels de campos em formulários */
+.formLabel {
+  FONT-WEIGHT: bold;
+}
+
+/* Usado na contigencia/legado para exibir campos não obrigatórios */
+.formLabelNotMandatory {
+}
+
+/* Usado para não imprimir borda nas imagens */
+.imageBorder {
+  border-style:none;
+}
+
+.selectManyListbox {
+	width: 150px;
+}
+
+.standardListWFixDesc {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+    width: 180px;
+}
+
+.standardListWFix {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+    width: 150px;
+}
+
+.standardListWFixDesc {
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+    width: 300px;
+}
+
+.groupHeader {
+   color: #000000;
+   background-color: #efebde;
+   padding: 3;
+   text-align: center;
+    font-size: 10pt;
+   text-align: center;
+}
+
+.standardTable_Header_Fixed {
+	color: #FFFFFF;
+    background-color: #003399;
+    padding: 3;
+    text-align: center;
+    border: none;
+    width: 250px;
+}
+
+.standardTable_ColumnLeft_Fixed {
+    text-align: left;
+    width: 250px;
+}
+.standardTable_Fixed {
+    text-align: left;
+    width: 500px;
+}
+
+.colunaMetadeAlinhadoEsquerda {
+    text-align: left;
+    width: 50%;
+}
+
+.colunaMetadeAlinhadoDireita {
+    text-align: right;
+    width: 50%;
+}
+
+.colunaPermissao {
+	width: 100px;
+}
+
+.colunaNivelOperacao {
+	margin-left: 100px;
+	width: 200px;
+}
+
+.colunaJanelaPermissao {
+	width: 450px;
+}
+
+.colunaPermissaoJanela {
+	width: 300px;
+}
+
+.checkBoxList_Group{
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-align: left;
+    display: block;
+    height: 286px;
+    overflow-y: scroll;
+    padding: 0;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #FFFFFF;
+    min-width: 120px;
+}
+
+.selectOneListBox_Group{
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-align: left;
+    display: block;
+    height: 286px;
+    padding: 0;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #FFFFFF;
+    overflow:hidden;
+}
+.selectOneListBox{
+	font-family : verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-align: left;
+    border:0;
+    padding:0;
+    height: 286px;
+}
+.formInputButtonMargin{
+	border-bottom: #000000 1px solid;
+	border-left: #000000 1px solid;
+	border-right: #000000 1px solid;
+	border-top: #000000 1px solid;
+	margin:2px;
+}
+.formInputSelectOneMenu {
+	width: 100%;
+}
