@@ -10,13 +10,13 @@ import lombok.Setter;
 @Named
 @ViewScoped
 public class TesteBean {
-	
-	private String nome = "Lucas"; 
+
+	private String nome;
 	private String sobrenome;
 	private String resultado;
-	
+
 	public void mostrarNome() {
 		this.resultado = "Seu nome eh: " + nome;
 	}
-	
+
 }
