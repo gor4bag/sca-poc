@@ -2,24 +2,32 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns:h="jakarta.faces.html"
 	xmlns:f="jakarta.faces.core" xmlns:ui="jakarta.faces.facelets"
-	template="/template.xhtml">
-	<ui:define name="content">
-		<h:outputText value="#{testeBean.nome}" />
-		<h:panelGrid id="panel" columns="2" border="1" cellpadding="10"
-			cellspacing="1">
-			<f:facet name="header">
-				<h:outputText value="Login" />
-			</f:facet>
-			<h:outputLabel value="Username" />
-			<h:inputText />
-			<h:outputLabel value="Password" />
-			<h:inputSecret />
+	xmlns:t="http://myfaces.apache.org/tomahawk" template="/template.xhtml">
 
-			<f:facet name="footer">
-				<h:panelGroup style="display:block; text-align:center">
-					<h:commandButton id="submit" value="Submit" />
-				</h:panelGroup>
-			</f:facet>
-		</h:panelGrid>
+	<ui:define name="content">
+		<h:form>
+			<h:panelGrid id="panel" columns="2" border="1" cellpadding="10"
+				cellspacing="1">
+				<f:facet name="header">
+					<h:outputText value="Login" />
+				</f:facet>
+				<h:outputLabel value="Nome" />
+				<h:inputText id="nome" value="#{testeBean.nome}" required="true" />
+				<h:outputLabel value="Sobrenome" />
+				<h:inputText value="#{testeBean.sobrenome}" />
+
+				<!-- <h:message for="nome" display="icon" />  -->
+				<t:message for="nome" showDetail="false" showSummary="true"/>
+
+				<f:facet name="footer">
+					<h:outputLabel value="#{testeBean.resultado}" />
+					<h:panelGroup style="display:block; text-align:center">
+						<h:commandButton id="submit" value="Mostrar nome completo"
+							action="#{testeBean.mostrarNome}" />
+					</h:panelGroup>
+				</f:facet>
+			</h:panelGrid>
+		</h:form>
 	</ui:define>
+
 </ui:composition>
